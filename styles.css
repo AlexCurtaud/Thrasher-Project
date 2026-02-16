@@ -154,3 +154,7 @@ body {
 .hide {
     display: none;
 }
+
+.touched {
+    background-color: lightgray;
+}
