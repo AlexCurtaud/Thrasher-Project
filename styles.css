@@ -133,3 +133,24 @@ body {
 .mb {
     margin-bottom: 20px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropcontent {
+    position: absolute;
+}
+
+.dropcontent a {
+    display: block;
+    font-size: large;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
