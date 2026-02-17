@@ -24,6 +24,10 @@ a {
     width: 100%;
 }
 
+.w-1000 {
+    width: 1000px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -142,6 +146,10 @@ body {
     position: absolute;
 }
 
+.dropcontent a:hover {
+    background-color: lightgray;
+}
+
 .dropcontent a {
     display: block;
     font-size: large;
@@ -157,4 +165,23 @@ body {
 
 .touched {
     background-color: lightgray;
+}
+
+/* ---------- FORM ---------- */
+/* ---------- BLOG ---------- */
+
+.blog-form {
+    width: 500px;
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
 }

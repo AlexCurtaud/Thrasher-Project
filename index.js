@@ -1,4 +1,6 @@
 
+
+
 // Dropdown menu
 const dropButton = document.querySelector(".dropbutton");
 const dropContent = document.querySelector(".dropcontent");
@@ -22,15 +24,16 @@ dropContent.classList.add("hide");
 
 // Color changes dropdown Menu (foreEach!!)
 // querySelectorAll + forEach to iterate on each node
-const dropLinks = document.querySelectorAll(".drop-link");
+// const dropLinks = document.querySelectorAll(".drop-link");
 
-dropLinks.forEach(function(dropLink) {
+// dropLinks.forEach(function(dropLink) {
 
-dropLink.addEventListener("mouseenter", function() {
-    dropLink.classList.add("touched");
-});
+// dropLink.addEventListener("mouseenter", function() {
+//     dropLink.classList.add("touched");
+// });
 
-dropLink.addEventListener("mouseleave", function() {
-    dropLink.classList.remove("touched");
-});
-});
+// dropLink.addEventListener("mouseleave", function() {
+//     dropLink.classList.remove("touched");
+// });
+// });
+

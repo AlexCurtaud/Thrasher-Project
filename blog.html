@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-blog.css">
+</head>
+
+<body class="d-flex justify-center">
+    <div class="w-1000">
+        <header>
+            <nav>
+                <div class="d-flex w-full">
+                    <div>
+                        <a href="index.html"><img class="d-flex logo w-full" src="assets/img/thrasher_logo.jpg"
+                                alt="logo_thrasher">
+                        </a>
+                    </div>
+                    <div class="w-full align-center">
+                        <ul class="d-flex justify-even">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <div class="dropdown">
+                                <li><a class="dropbutton">Content</a>
+                                    <div class="dropcontent hide">
+                                        <a class="drop-link" href="/gallery.html">Gallery</a>
+                                        <a class="drop-link" href="/videos.html">Videos</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <img class="w-full" src="assets/img/blog-hero-banner1.png" alt="image thrasher">
+            </div>
+        </header>
+
+        <main>
+
+            <form id="blog-form" method="post">
+                <div class="blog-form d-flex flex-col">
+                    <label for="image"></label>
+                    <input class="data img-btn" type="file" id="image" name="image" accept="image/*">
+                    <label for="title"></label>
+                    <input class="data title-area" type="text" name="title" id="title" placeholder="Title...">
+                    <label for="story"></label>
+                    <textarea class="data story-area" name="story" id="story"
+                        placeholder="Tell your story..."></textarea>
+                    <label for="author"></label>
+                    <input class="data author-area" type="text" name="author" id="author" placeholder="Author...">
+                    <button id="newPost" type="button">Post</button>
+                </div>
+            </form>
+            <div class="blog-post">
+            </div>
+        </main>
+        <footer>
+            <div class="h-300 bg-footer">
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="createPost.js"></script>
+</body>
+
+</html>
