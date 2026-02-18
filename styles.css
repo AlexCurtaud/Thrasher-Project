@@ -1,3 +1,9 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
@@ -6,6 +12,7 @@ a {
     text-decoration: none;
     color: black;
     font-size: x-large;
+    font-weight: 700;
 }
 
 .d-flex {
@@ -28,13 +35,14 @@ a {
     width: 1000px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
 .logo {
     margin: 15px;
+}
+
+.hero-banner {
+    max-height: 500px;
 }
 
 .mxy-30 {
@@ -167,21 +175,3 @@ body {
     background-color: lightgray;
 }
 
-/* ---------- FORM ---------- */
-/* ---------- BLOG ---------- */
-
-.blog-form {
-    width: 500px;
-    padding-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-input,
-textarea {
-    resize: none;
-}
-
-button {
-    cursor: pointer;
-}
