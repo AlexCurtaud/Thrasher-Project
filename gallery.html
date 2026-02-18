@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-gallery.css">
+</head>
+
+<body class="d-flex justify-center">
+    <div class="w-1000">
+        <header>
+            <nav>
+                <div class="d-flex w-full">
+                    <div>
+                        <a href="index.html"><img class="d-flex logo w-full" src="assets/img/logo/thrasher_logo.jpg"
+                                alt="logo_thrasher">
+                        </a>
+                    </div>
+                    <div class="w-full align-center navbar">
+                        <ul class="d-flex justify-even">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <div class="dropdown">
+                                <li><a class="dropbutton">Content</a>
+                                    <div class="dropcontent hide">
+                                        <a class="drop-link" href="/gallery.html">Gallery</a>
+                                        <a class="drop-link" href="/videos.html">Videos</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-banner">
+                <img class="w-full" src="assets/img/banners/gallery-hero-banner.png" alt="image thrasher">
+            </div>
+        </header>
+
+        <main>
+
+            <div class="div-title">
+                <h1 class="title-gallery">45 Years of Culture</h1>
+                <div class="container-icon">
+                    <img id="one-icon" class="icon-display" src="assets/img/icon/display_1.svg" alt="display one">
+                    <img id="mult-icon" class="icon-display" src="assets/img/icon/display_2.svg" alt="display multi">
+                </div>
+                <div class="container-new">
+                    <a id="add-image"><img src="assets/img/icon/add.svg" alt="add new"></a>
+                </div>
+            </div>
+            <div class="container-form-add hide">
+                <form class="form-add">
+                    <p class="title-add">Import your Image</p>
+                    <select name="gallery-name" id="gallery-name">
+                        <option value="0">Gallery name</option>
+                        <option value="1">Black & White</option>
+                        <option value="2">Thrasher Covers</option>
+                    </select>
+                    <input type="file" id="add-file" accept="image/jpg">
+                    <p class="require-add">*500x750px Only</p>
+                    <div class="close-button">
+                        <img class="close-icon" src="assets/img/icon/x.svg" alt="close add">
+                    </div>
+                    <div class="confirm-add">
+                        <p class="confirm-button">ADD</p>
+                    </div>
+                </form>
+            </div>
+            <div class="gallery-collection">
+                <HR>
+                <div class="title-sub-gallery">
+                    <h2>Black & White</h2>
+                </div>
+                <HR>
+                <div class="gallery-baw gallery-global one-display">
+                    <!-- Content from Javascript -->
+                </div>
+                <HR>
+                <div class="title-sub-gallery">
+                    <h2>Thrasher Covers</h2>
+                </div>
+                <HR>
+                <div class="gallery-covers gallery-global one-display">
+                    <!-- Content from Javascript -->
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="h-300 bg-footer">
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="createGallery.js"></script>
+</body>
+
+</html>
