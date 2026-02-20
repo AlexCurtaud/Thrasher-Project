@@ -1,0 +1,111 @@
+/* ---------- MAIN FRAME ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    max-width: 1000px;
+}
+
+/* ---------- GENERIC NAVBAR ---------- */
+.container-navbar {
+    display: flex;
+    width: 100%;
+}
+
+/* ---------- LOGO NAVBAR ---------- */
+.logo-div {
+    width: fit-content;
+}
+
+.logo-div>a {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo-div>a>img {
+    margin: 15px;
+    width: 270px;
+    height: 131.7px;
+}
+
+/* ---------- BUTTON NAVBAR ---------- */
+.button-navbar {
+    width: 100%;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.button-navbar>ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropcontent {
+    position: absolute;
+}
+
+.dropcontent a:hover {
+    background-color: lightgray;
+}
+
+.dropcontent a {
+    display: block;
+    font-size: large;
+}
+
+/* ---------- HERO BANNER ---------- */
+.hero-banner {
+    max-height: 500px;
+    width: 100%;
+}
+
+/* ---------- GENERIC FOOTER ---------- */
+.footer {
+    position: relative;
+    height: 300px;
+    background-color: rgb(168, 168, 168);
+}
+
+.in-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.credit {
+position: absolute;
+bottom: 4%;
+right: 10%;
+}
+
+/* ---------- GLOBAL DISPLAY CLASS ---------- */
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

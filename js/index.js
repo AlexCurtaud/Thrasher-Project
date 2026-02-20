@@ -1,7 +1,6 @@
-
-
-
 // Dropdown menu
+// Could have been done with CSS for performance & efficiency
+// But the goal here is to improve with JS
 const dropButton = document.querySelector(".dropbutton");
 const dropContent = document.querySelector(".dropcontent");
 
@@ -20,20 +19,4 @@ dropContent.classList.remove("hide");
 dropContent.addEventListener("mouseleave", function() {
 dropContent.classList.add("hide");
 });
-
-
-// Color changes dropdown Menu (foreEach!!)
-// querySelectorAll + forEach to iterate on each node
-// const dropLinks = document.querySelectorAll(".drop-link");
-
-// dropLinks.forEach(function(dropLink) {
-
-// dropLink.addEventListener("mouseenter", function() {
-//     dropLink.classList.add("touched");
-// });
-
-// dropLink.addEventListener("mouseleave", function() {
-//     dropLink.classList.remove("touched");
-// });
-// });
 
