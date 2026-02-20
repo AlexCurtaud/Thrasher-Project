@@ -12,7 +12,7 @@ function postCreator() {
     divPost.className = "blog-post";
 
     const divImg = document.createElement('div');
-    divImg.className = "blop-post-img";
+    divImg.className = "blog-post-img";
 
     const img = document.createElement('img');
     const file = document.querySelector("#image").files[0];

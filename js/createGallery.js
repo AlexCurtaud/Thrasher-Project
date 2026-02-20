@@ -8,11 +8,12 @@ function createBAW(array) {
     for (const src of array) {
         const image = document.createElement("img");
         image.src = "assets/img/gallery/black_white/" + src;
-        image.className = "image-gallery";
+        image.className = "gallery-image";
         const titreImg = document.createElement("h3");
         titreImg.innerText = src;
+        titreImg.className = "text-image"
         const divImage = document.createElement("div");
-
+        divImage.className = "div-image"
         divImage.appendChild(titreImg);
         divImage.appendChild(image);
         divGalleryBAW.appendChild(divImage);
@@ -25,9 +26,15 @@ function createCovers(array) {
     for (const src of array) {
         const image = document.createElement("img");
         image.src = "assets/img/gallery/covers/" + src;
-        image.className = "image-gallery";
-
-        divGalleryCovers.appendChild(image);
+        image.className = "gallery-image";
+        const titreImg = document.createElement("h3");
+        titreImg.innerText = src;
+        titreImg.className = "text-image"
+        const divImage = document.createElement("div");
+        divImage.className = "div-image"
+        divImage.appendChild(titreImg);
+        divImage.appendChild(image);
+        divGalleryCovers.appendChild(divImage);
     }
 }
 
@@ -82,23 +89,34 @@ const addImage = document.querySelector(".confirm-add")
 addImage.addEventListener("click", function () {
     // const form = document.querySelector(".container-form-add");
     // form.classList.add("hide");
+    const div = document.createElement('div');
+    div.className = "div-image";
     const img = new Image();
+    img.className = "gallery-image";
     const file = document.querySelector("#add-file").files[0];
     const galleryChoice = document.querySelector("#gallery-name").value;
     img.src = URL.createObjectURL(file);
+    const title = document.createElement('h3');
+    title.innerText = file.name;
+    title.className = "text-image";
+    console.log(file);
+    div.appendChild(img);
+    div.appendChild(title);
     console.log(galleryChoice);
+    // onload allow to use property of the image as width and height.
+    // usefull here so I can pre check that the image a the desired dimension
     img.onload = () => {
         console.log(img.width);
         if (img.width !== 500 && img.height !== 750) {
             throw new Error("Wrong size");
         } else {
-            if (galleryChoice == 1) {
+            if (galleryChoice === "1") {
                 const divGalleryBAW = document.querySelector(".gallery-baw");
-                divGalleryBAW.appendChild(img);
+                divGalleryBAW.appendChild(div);
                 console.log(galleryChoice);
-            } else if (galleryChoice == 2) {
+            } else if (galleryChoice === "2") {
                 const divGalleryCovers = document.querySelector(".gallery-covers");
-                divGalleryCovers.appendChild(img);
+                divGalleryCovers.appendChild(div);
             }
         }
     }

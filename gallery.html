@@ -4,55 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-gallery.css">
+    <title>Gallery - Thrasher Website</title>
+    <link rel="stylesheet" href="css/styles-generic.css">
+    <link rel="stylesheet" href="css/styles-gallery.css">
 </head>
 
-<body class="d-flex justify-center">
-    <div class="w-1000">
+<body>
+    <!-- ------------- CONTENT FRAME ------------- -->
+    <div class="frame">
         <header>
+            <!-- ------------- GENERIC NAVBAR ------------- -->
             <nav>
-                <div class="d-flex w-full">
-                    <div>
-                        <a href="index.html"><img class="d-flex logo w-full" src="assets/img/logo/thrasher_logo.jpg"
+                <div class="container-navbar">
+                    <div class="logo-div">
+                        <a href="home.html"><img src="assets/img/logo/thrasher_logo.jpg"
                                 alt="logo_thrasher">
                         </a>
                     </div>
-                    <div class="w-full align-center navbar">
-                        <ul class="d-flex justify-even">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/blog.html">Blog</a></li>
+                    <div class="button-navbar">
+                        <ul>
+                            <li><a class="nav-link" href="/home.html">Home</a></li>
+                            <li><a class="nav-link" href="/blog.html">Blog</a></li>
                             <div class="dropdown">
-                                <li><a class="dropbutton">Content</a>
+                                <li><a class="nav-link dropbutton">Content</a>
                                     <div class="dropcontent hide">
-                                        <a class="drop-link" href="/gallery.html">Gallery</a>
-                                        <a class="drop-link" href="/videos.html">Videos</a>
+                                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                                        <a class="nav-link" href="/videos.html">Videos</a>
                                     </div>
                                 </li>
                             </div>
-                            <li><a href="">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="hero-banner">
-                <img class="w-full" src="assets/img/banners/gallery-hero-banner.png" alt="image thrasher">
+            <!-- ------------- HERO BANNER ------------- -->
+            <div>
+                <img class="hero-banner" src="assets/img/banners/gallery-hero-banner.png" alt="image thrasher">
             </div>
         </header>
 
         <main>
-
+            <!-- ------------- GLOBAL GALLERY ------------- -->
+            <!-- ------------- GALLERY TITLE ------------- -->
             <div class="div-title">
                 <h1 class="title-gallery">45 Years of Culture</h1>
+                <!-- ------------- DISPLAY ICON ------------- -->
                 <div class="container-icon">
                     <img id="one-icon" class="icon-display" src="assets/img/icon/display_1.svg" alt="display one">
                     <img id="mult-icon" class="icon-display" src="assets/img/icon/display_2.svg" alt="display multi">
                 </div>
+                <!-- ------------- ADD IMAGE ICON ------------- -->
                 <div class="container-new">
                     <a id="add-image"><img src="assets/img/icon/add.svg" alt="add new"></a>
                 </div>
             </div>
+            <!-- ------------- ADD IMAGE FORM ------------- -->
             <div class="container-form-add hide">
                 <form class="form-add">
                     <p class="title-add">Import your Image</p>
@@ -71,7 +77,9 @@
                     </div>
                 </form>
             </div>
+            <!-- ------------- IMAGE GALLERY ------------- -->
             <div class="gallery-collection">
+                <!-- ------------- BLACK AND WHITE ------------- -->
                 <HR>
                 <div class="title-sub-gallery">
                     <h2>Black & White</h2>
@@ -80,6 +88,7 @@
                 <div class="gallery-baw gallery-global one-display">
                     <!-- Content from Javascript -->
                 </div>
+                <!-- ------------- COVERS ------------- -->
                 <HR>
                 <div class="title-sub-gallery">
                     <h2>Thrasher Covers</h2>
@@ -91,14 +100,16 @@
             </div>
 
         </main>
-
+        <!-- ------------- GENERIC FOOTER - empty for now ------------- -->
         <footer>
-            <div class="h-300 bg-footer">
+            <div class="footer">
+                <h2 class="in-progress">[IN PROGRESS]</h2>
+                <p class="credit">&copy; 2026 - Thrasher Magazine - Alex Curtaud </p>
             </div>
         </footer>
     </div>
-    <script src="index.js"></script>
-    <script src="createGallery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/createGallery.js"></script>
 </body>
 
 </html>
